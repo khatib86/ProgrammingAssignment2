@@ -1,0 +1,25 @@
+
+## Start
+makeCacheMatrix <- function(x = matrix()) {
+
+## Set Balnk Matrix  
+  inverse <- NULL
+  
+  set <- function(y) {
+    x <<- y
+    inverse <<- NULL
+  }
+  
+    get <- function() {
+    x
+      }
+
+    
+  setinverse <- function(input){
+    inverse <<- input
+  }
+  getinverse <- function(){
+    inverse
+  }
+  list(set = set, get = get,setinverse = setinverse, getinverse = getinverse)
+}
